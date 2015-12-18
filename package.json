@@ -1,27 +1,39 @@
 {
-	"name": "lcov-sourcemap",
-	"version": "0.1.3",
-	"description": "Transform an LCOV file using sourcemaps.",
-	"main": "./lib/index.js",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/Tapad/lcov-sourcemap"
+  "name": "lcov-sourcemap",
+  "version": "0.1.3",
+  "description": "Transform an LCOV file using sourcemaps.",
+  "main": "./lib/index.js",
+	"bin": {
+		"lcov-sourcemap": "./lib/cli.js"
 	},
-	"keywords": [
-		"lcov",
-		"sourcemap",
-		"transform"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Tapad/lcov-sourcemap"
+  },
+  "keywords": [
+    "lcov",
+    "sourcemap",
+    "transform"
+  ],
+  "author": "Jesse Zhang",
+	"contributors": [
+		{
+			"name": "Markus Wolf",
+			"email": "knister.peter@shadowrun-clan.de",
+			"url": "https://github.com/KnisterPeter"
+		}
 	],
-	"author": "Jesse Zhang",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Tapad/lcov-sourcemap/issues"
-	},
-	"homepage": "https://github.com/Tapad/lcov-sourcemap",
-	"dependencies": {
-		"bluebird": "^2.9.21",
-		"lcov-parse": "0.0.9",
-		"lodash-node": "^3.6.0",
-		"source-map": "^0.4.2"
-	}
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tapad/lcov-sourcemap/issues"
+  },
+  "homepage": "https://github.com/Tapad/lcov-sourcemap",
+  "dependencies": {
+    "bluebird": "^2.9.21",
+    "glob": "^6.0.1",
+    "lcov-parse": "0.0.9",
+    "lodash-node": "^3.6.0",
+    "minimist": "^1.2.0",
+    "source-map": "^0.4.2"
+  }
 }

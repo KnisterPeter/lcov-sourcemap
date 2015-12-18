@@ -17,6 +17,18 @@ npm install --save-dev lcov-sourcemap
 
 ---
 ## Usage
+
+### CLI
+
+```shell
+lcov-sourcemap --lcov <path/to/lcov-file> --source-dir <path/to/sources> --source-maps <glob/for/source-maps>
+```
+
+* `--source-maps` could be specified multiple times
+* The final LCOV file is printed to stdout
+
+### API
+
 ```
 var lcovSourcemap = require("lcov-sourcemap");
 lcovSourcemap("./coverage/lcov-raw.info", {
